@@ -1,3 +1,8 @@
+:root{
+  --branco:white;
+  --vermelho:red;
+  --preto:black;
+}
 *{
   margin: 0;
   padding: 0;
@@ -5,6 +10,14 @@
 }
 body{
   background-color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button{
+  cursor: pointer;
+}
+section{
+  overflow: hidden;
+
 }
 
 .container.main{
@@ -12,7 +25,7 @@ body{
 }
 .container{
   width: 100%;
-  background-color: black;
+  background-color: var(--preto);
   margin-bottom: 6px;
 }
 
@@ -32,42 +45,42 @@ body{
 .title{
   display: flex;
   justify-content: space-between;
-  color: red;
+  color: var(--vermelho);
   margin: 20px;
   
 }
 .title .button{
-  background-color: red;
-  color: white;
+  background-color: var(--vermelho);
+  color: var(--branco);
   border-radius: 4px;
   width: 80px;
   border: none;
   height: 30px;
   font-size: 14px;
 }
+
 .container-box{
-  color: white;
+  color: var(--branco);
   display: flex;  
   margin: 0 auto;
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  margin-top: 10rem;
-  font-family: Arial, Helvetica, sans-serif;  
+  margin-top: 10rem;    
   text-align: center;
   width: 58%;  
   text-shadow:  0 0 5px #0000006e;
 }
-.container-box .box-title{
+.box-title{
   font-weight: bold;
   font-size: 55px;
 }
-.container-box .box-sub-title{
+.box-sub-title{
   font-weight: 200;
   font-size: 30px;
 }
 
-.container-box .box-end-title{
+.box-end-title{
   font-size: 25px;
   font-weight: 100;
   
@@ -82,12 +95,49 @@ body{
   width: 400px;
 }
 .input button{
-  background-color: red;
-  color: white;
+  background-color: var(--vermelho);
+  color: var(--branco);
   width: 200px;
   border: none;
   font-weight: 200;
-  font-size: 30px;
-  cursor: pointer;
+  font-size: 30px; 
 }
+
+/* containner sec */
+.container.sec{
+  color: var(--branco);
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+.box-info{
+  padding: 30px;
+}
+.box-info .box-title{
+  margin-bottom: 20px;
+}
+.box-info-media img{
+  width: 40rem;
+  padding: 30px;
+  
+}
+.box-info-media{
+  height: 455px;
+
+}
+.box-media-video{
+  position:relative;
+  top: 6rem;
+  left: 14%; 
+  z-index: 1;
+}
+.box-media-img{
+  position: relative;
+  z-index: 2;
+  bottom: 17rem;
+}
+.box-media-video video{
+  width: 69%;
+}
+
 
