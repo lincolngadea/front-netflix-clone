@@ -7,17 +7,87 @@ body{
   background-color: #333333;
 }
 
+.container.main{
+  height: 900px;
+}
 .container{
   width: 100%;
   background-color: black;
   margin-bottom: 6px;
-  height: 950px;
 }
 
 .container .main{
   
-  background:linear-gradient(to top, rgba(0,0,0,.8) 0,rgba(0,0,0,0)60%,rgba(0,0,0,.8)100%),url("../img/bg-main.jpg") no-repeat center center ;
-  background-size: cover;
+  background:linear-gradient(to top, rgba(0,0,0,.10) 0,rgba(0,0,0,0.5)60%,rgba(0,0,0,.8)100%),url("../img/bg-main.jpg") no-repeat;
+  background-position: top fixed;
+  background-size: auto;
   height: 100%;
   
 }
+.main-box{
+  display: flex;
+  flex-direction: column;
+  
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  color: red;
+  margin: 20px;
+  
+}
+.title .button{
+  background-color: red;
+  color: white;
+  border-radius: 4px;
+  width: 80px;
+  border: none;
+  height: 30px;
+  font-size: 14px;
+}
+.container-box{
+  color: white;
+  display: flex;  
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  margin-top: 10rem;
+  font-family: Arial, Helvetica, sans-serif;  
+  text-align: center;
+  width: 58%;  
+  text-shadow:  0 0 5px #0000006e;
+}
+.container-box .box-title{
+  font-weight: bold;
+  font-size: 55px;
+}
+.container-box .box-sub-title{
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.container-box .box-end-title{
+  font-size: 25px;
+  font-weight: 100;
+  
+}
+.input{
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.input input{
+  height: 50px;
+  width: 400px;
+}
+.input button{
+  background-color: red;
+  color: white;
+  width: 200px;
+  border: none;
+  font-weight: 200;
+  font-size: 30px;
+  cursor: pointer;
+}
+
