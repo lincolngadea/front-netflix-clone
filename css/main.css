@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: #333333;
+}
+
+.container{
+  width: 100%;
+  background-color: black;
+  margin-bottom: 6px;
+  height: 950px;
+}
+
+.container .main{
+  
+  background:linear-gradient(to top, rgba(0,0,0,.8) 0,rgba(0,0,0,0)60%,rgba(0,0,0,.8)100%),url("../img/bg-main.jpg") no-repeat center center ;
+  background-size: cover;
+  height: 100%;
+  
+}
