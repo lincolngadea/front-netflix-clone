@@ -261,3 +261,36 @@ section{
   font-size: 30px;
 }
 
+/* footer container */
+footer{
+  color: gray;
+}
+.faq-title.foot{
+  margin-left: 18rem;
+  text-align: left;
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: gray;
+  
+}
+.foot-box{ 
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 14px;
+}
+.foot-box-item{
+  margin-right: 20px;
+}
+.foot-box ul{
+  margin: 0;
+  padding: 0;
+}
+.foot-box ul li{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.container.foot{
+  margin-bottom: 0;
+}
